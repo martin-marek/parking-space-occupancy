@@ -25,8 +25,9 @@ def show_warps(warps, nrow=8, fname=None, show=False):
     Plot a tensor of image patches / warps.
     """
     image_grid = torchvision.utils.make_grid(warps, nrow=nrow)
-    plt.imshow(image_pt_to_np(image_grid))
-    plt.axis('off')
+    fig, ax = plt.subplots(figsize=[8, 8])
+    ax.imshow(image_pt_to_np(image_grid))
+    ax.axis('off')
     save_fig(fig, fname, show)
     
 

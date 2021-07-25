@@ -111,10 +111,6 @@ def train_model(model, train_ds, valid_ds, test_ds, model_dir, device, lr=1e-4, 
     optimizer = torch.optim.AdamW(params, lr=lr)
     scheduler = torch.optim.lr_scheduler.StepLR(optimizer, lr_decay, gamma=0.1)
     
-    # print progess
-    if verbose:
-        print(f'Training {model_name}')
-    
     # train
     for epoch in range(1, epochs+1):
         # train for one epoch
