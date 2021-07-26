@@ -17,6 +17,8 @@ The dataset (called *Action-Camera Parking Dataset*) contains 293 images capture
 
 # Inference
 
+Here's a minimal example to run inference on a trained model. For more, please see the [demo notebook](https://colab.research.google.com/github/martin-marek/parking-space-occupancy/blob/main/notebooks/model_playground.ipynb).
+
 ```python
 import torch, os, requests
 from models.rcnn import RCNN
@@ -43,7 +45,7 @@ class_scores = class_logits.softmax(1)[:, 1]
 
 # Training
 
-To reproduce our full results from the paper, please run the (train_all_models)[https://github.com/martin-marek/parking-space-occupancy/blob/main/train_all_models.py] script locally. To train just a single model, please use the provided (Colab notebook)[https://colab.research.google.com/github/martin-marek/parking-space-occupancy/blob/main/notebooks/train.ipynb] – Google Colab is sufficient for this.
+To reproduce our full results from the paper, please run the [train_all_models](https://github.com/martin-marek/parking-space-occupancy/blob/main/train_all_models.py) script locally. To train just a single model, please use the provided [Colab notebook](https://colab.research.google.com/github/martin-marek/parking-space-occupancy/blob/main/notebooks/train.ipynb) – Google Colab is sufficient for this.
 
 # Citation
 
