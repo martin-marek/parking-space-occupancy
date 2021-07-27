@@ -2,7 +2,7 @@
 
 Official repository for the [Image-Based Parking Space Occupancy Classification: Dataset and Baseline](https://arxiv.org/abs/2107.12207) paper.
 
-We introduce a new dataset for image-based parking space occupancy classification and propose a simple baseline model for parking space occupancy classification, which achieves 98% accuracy on unseen parking lots.
+We introduce a new dataset for image-based parking space occupancy classification and propose a simple baseline model which achieves 98% accuracy on unseen parking lots.
 
 In this repository, we provide:
 - code to reproduce all of our results
