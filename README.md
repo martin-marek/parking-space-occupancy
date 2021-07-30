@@ -37,9 +37,9 @@ model.load_state_dict(torch.load(weights_path, map_location='cpu'))
 
 # inference
 image = torch.zeros([3, 1000, 1000])
-rois = torch.zeros([10, 4, 2])
+parking_space_coordinates = torch.zeros([10, 4, 2])
 image = transforms.preprocess(image)
-class_logits = model(image, rois)
+class_logits = model(image, parking_space_coordinates)
 class_scores = class_logits.softmax(1)[:, 1]
 ```
 
