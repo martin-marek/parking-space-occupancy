@@ -1,6 +1,6 @@
 from torch import nn
 from torchvision.models.detection.backbone_utils import resnet_fpn_backbone
-from torchvision.models.utils import load_state_dict_from_url
+from torch.hub import load_state_dict_from_url
 
 from .utils import pooling
 from .utils.class_head import ClassificationHead
