@@ -6,7 +6,7 @@ We introduce a new dataset for image-based parking space occupancy classificatio
 
 In this repository, we provide:
 - code to reproduce all of our results
-- download links for the [dataset](https://storage.googleapis.com/pd-datasets/rois_gopro.zip), [training logs](https://storage.googleapis.com/pd-datasets/paper_training_output.zip), and [model weights](https://storage.googleapis.com/pd-models/RCNN_128_square_gopro.pt)
+- download links for the [dataset](https://mm-sharing.s3.eu-west-1.amazonaws.com/parking/rois_gopro.zip), [training logs](https://mm-sharing.s3.eu-west-1.amazonaws.com/parking/paper_training_output.zip), and [model weights](https://mm-sharing.s3.eu-west-1.amazonaws.com/parking/RCNN_128_square_gopro.pt)
 - Colab notebooks to [explore the dataset and models](https://colab.research.google.com/github/martin-marek/parking-space-occupancy/blob/main/notebooks/model_playground.ipynb), [train a model](https://colab.research.google.com/github/martin-marek/parking-space-occupancy/blob/main/notebooks/train.ipynb), and [plot the training logs](https://colab.research.google.com/github/martin-marek/parking-space-occupancy/blob/main/notebooks/train_log_analysis.ipynb)
 
 # Dataset
@@ -45,7 +45,7 @@ class_scores = class_logits.softmax(1)[:, 1]
 
 # Training
 
-To reproduce our full results from the paper, please run the [train_all_models](https://github.com/martin-marek/parking-space-occupancy/blob/main/train_all_models.py) script locally. To train just a single model, please use the provided [Colab notebook](https://colab.research.google.com/github/martin-marek/parking-space-occupancy/blob/main/notebooks/train.ipynb) – Google Colab is sufficient for this.
+To reproduce our full results from the paper, please run the [train_all_models](train_all_models.py) script locally. To train just a single model, please use the provided [Colab notebook](https://colab.research.google.com/github/martin-marek/parking-space-occupancy/blob/main/notebooks/train.ipynb) – Google Colab is sufficient for this.
 
 # Citation
 
