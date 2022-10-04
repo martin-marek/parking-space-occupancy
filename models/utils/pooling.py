@@ -107,7 +107,7 @@ def roi_pool_square(tensor: Tensor, rois: Tensor, size: int = 3):
 
 
 @torch.jit.script
-def roi_pool_dqrl(tensor: Tensor, rois: Tensor, size: int = 3):
+def roi_pool_qdrl(tensor: Tensor, rois: Tensor, size: int = 3):
     """
     Pool quadrilateral ROIs from 'tensor'.
     'rois' must be in range [0, 1], have shape [N, 4, 2 (x, y)] and
@@ -133,7 +133,7 @@ def roi_pool(tensor: Tensor, rois: Tensor, size: int = 3, pooling_type: str = 's
     if pooling_type == 'square':
         return roi_pool_square(tensor, rois, size)
     elif pooling_type == 'qdrl':
-        return roi_pool_dqrl(tensor, rois, size)
+        return roi_pool_qdrl(tensor, rois, size)
     else:
         raise Exception(f'unknown pooling method "{pooling_type}"')
 
