@@ -6,7 +6,7 @@ We introduce a new dataset for image-based parking space occupancy classificatio
 
 In this repository, we provide:
 - code to reproduce all of our results
-- download links for the [dataset](https://mm-sharing.s3.eu-west-1.amazonaws.com/parking/rois_gopro.zip), [training logs](https://mm-sharing.s3.eu-west-1.amazonaws.com/parking/paper_training_output.zip), and [model weights](https://mm-sharing.s3.eu-west-1.amazonaws.com/parking/RCNN_128_square_gopro.pt)
+- download links for the [dataset](https://pub-e8bbdcbe8f6243b2a9933704a9b1d8bc.r2.dev/parking%2Frois_gopro.zip), [training logs](https://pub-e8bbdcbe8f6243b2a9933704a9b1d8bc.r2.dev/parking%2Fpaper_training_output.zip), and [model weights](https://pub-e8bbdcbe8f6243b2a9933704a9b1d8bc.r2.dev/parking%2FRCNN_128_square_gopro.pt)
 - Colab notebooks to [explore the dataset and models](https://colab.research.google.com/github/martin-marek/parking-space-occupancy/blob/main/notebooks/model_playground.ipynb), [train a model](https://colab.research.google.com/github/martin-marek/parking-space-occupancy/blob/main/notebooks/train.ipynb), and [plot the training logs](https://colab.research.google.com/github/martin-marek/parking-space-occupancy/blob/main/notebooks/train_log_analysis.ipynb)
 
 # Dataset
